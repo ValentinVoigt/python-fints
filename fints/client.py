@@ -1190,6 +1190,7 @@ class FinTS3PinTanClient(FinTS3Client):
         return seg
 
     def _need_twostep_tan_for_segment(self, seg):
+        return True
         if not self.selected_security_function or self.selected_security_function == '999':
             return False
         else:
